@@ -1,10 +1,10 @@
 ---
-name: ingest-narrative-spin-up-branded-microsite
-description: Transforms a raw customer Salesforce narrative into a branded, Heroku-ready HTML/Tailwind microsite with deployment scaffolding. Use when the user asks to ingest a narrative markdown file, apply customer and Salesforce brand signals, generate a microsite, or prepare immediate Heroku deployment artifacts.
+name: ingest-narrative-spin-up-branded-microsite-cursor-optimized
+description: Transforms a raw customer Salesforce narrative into a branded, Heroku-ready HTML/Tailwind microsite with deployment scaffolding. Optimized for Cursor. Use when the user asks to ingest a narrative markdown file, apply customer and Salesforce brand signals, generate a microsite, or prepare immediate Heroku deployment artifacts.
 disable-model-invocation: true
 ---
 
-# Ingest Narrative & Spin Up Branded Microsite
+# Ingest Narrative & Spin Up Branded Microsite (Cursor-Optimized)
 
 ## Description
 Activates the specialized pipeline to transform a raw customer Salesforce narrative into a beautifully branded, Heroku-ready HTML/Tailwind microsite.

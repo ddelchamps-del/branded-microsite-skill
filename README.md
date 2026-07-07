@@ -1,4 +1,4 @@
-# Ingest Narrative & Spin Up Branded Microsite
+# Ingest Narrative & Spin Up Branded Microsite (Cursor-Optimized)
 
 A [Cursor Agent Skill](https://docs.cursor.com/) that transforms a raw customer Salesforce narrative into a beautifully branded, Heroku-ready HTML/Tailwind microsite — complete with deployment scaffolding.
 
@@ -40,8 +40,8 @@ Before running, the workspace should contain:
 Place `SKILL.md` in your Cursor skills directory so the agent can discover it:
 
 ```bash
-mkdir -p ~/.cursor/skills/ingest-narrative-spin-up-branded-microsite
-cp SKILL.md ~/.cursor/skills/ingest-narrative-spin-up-branded-microsite/SKILL.md
+mkdir -p ~/.cursor/skills/ingest-narrative-spin-up-branded-microsite-cursor-optimized
+cp SKILL.md ~/.cursor/skills/ingest-narrative-spin-up-branded-microsite-cursor-optimized/SKILL.md
 ```
 
 Then invoke the skill from Cursor by asking the agent to ingest a narrative and spin up a branded microsite.
