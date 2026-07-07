@@ -1,6 +1,15 @@
-# Ingest Narrative & Spin Up Branded Microsite (Cursor-Optimized)
+# Ingest Narrative & Spin Up Branded Microsite
 
-A [Cursor Agent Skill](https://docs.cursor.com/) that transforms a raw customer Salesforce narrative into a beautifully branded, Heroku-ready HTML/Tailwind microsite — complete with deployment scaffolding.
+An Agent Skill that transforms a raw customer Salesforce narrative into a beautifully branded, Heroku-ready HTML/Tailwind microsite — complete with deployment scaffolding.
+
+This repo ships **two optimized versions** of the same skill:
+
+| Version | File | Optimized for |
+| --- | --- | --- |
+| Cursor | [`SKILL-cursor.md`](./SKILL-cursor.md) | [Cursor](https://docs.cursor.com/) |
+| Claude Code | [`SKILL-claude.md`](./SKILL-claude.md) | [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) |
+
+Both versions run the same pipeline and produce the same output. They differ only in the agent-specific tooling used for the web-scraping step (Cursor's browser tool vs. Claude Code's `WebFetch` tool) and their install locations.
 
 ## What is this?
 
@@ -37,15 +46,25 @@ Before running, the workspace should contain:
 
 ## Installation
 
-Place `SKILL.md` in your Cursor skills directory so the agent can discover it:
+### Cursor
 
 ```bash
 mkdir -p ~/.cursor/skills/ingest-narrative-spin-up-branded-microsite-cursor-optimized
-cp SKILL.md ~/.cursor/skills/ingest-narrative-spin-up-branded-microsite-cursor-optimized/SKILL.md
+cp SKILL-cursor.md ~/.cursor/skills/ingest-narrative-spin-up-branded-microsite-cursor-optimized/SKILL.md
 ```
 
 Then invoke the skill from Cursor by asking the agent to ingest a narrative and spin up a branded microsite.
 
+### Claude Code
+
+```bash
+mkdir -p ~/.claude/skills/ingest-narrative-spin-up-branded-microsite-claude-code-optimized
+cp SKILL-claude.md ~/.claude/skills/ingest-narrative-spin-up-branded-microsite-claude-code-optimized/SKILL.md
+```
+
+Then invoke the skill from Claude Code by asking the agent to ingest a narrative and spin up a branded microsite.
+
 ## Files
 
-- [`SKILL.md`](./SKILL.md) — The full skill definition and execution steps.
+- [`SKILL-cursor.md`](./SKILL-cursor.md) — The Cursor-optimized skill definition.
+- [`SKILL-claude.md`](./SKILL-claude.md) — The Claude Code-optimized skill definition.
